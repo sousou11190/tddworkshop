@@ -1,13 +1,15 @@
 class FizzBuzz
   
   def convert(num)
-    if num % 3 == 0 then
+    if (num % 3 == 0) and (num % 5 == 0) then
+      return "FizzBuzz"
+    elsif num % 3 == 0 then
       return "Fizz"
-    end
-    if num % 5 == 0 then
+    elsif num % 5 == 0 then
       return "Buzz"
+    else
+      return num.to_s
     end
-    return num.to_s
   end
 
 end
